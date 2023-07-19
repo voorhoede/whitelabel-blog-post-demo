@@ -27,9 +27,10 @@
     --spacing-2: calc(1 * var(--spacing-factor) * 1.5rem);
     --spacing-3: calc(1 * var(--spacing-factor) * 2rem);
 
+    --color-body: #333;
+
     padding: var(--spacing-2) 0;
-    background-color: var(--color-background-1);
-    color: var(--color-background-1-contrast);
+    color: var(--color-body);
     font-family: var(--font-family);
   }
   
@@ -68,8 +69,8 @@
     display: block;
     width: 100%;
     color: var(--color-body);
-    background-color: var(--color-background-2);
-    color: var(--color-background-2-contrast);
+    background-color: var(--color-background);
+    color: var(--color-background-contrast);
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--shadow-default);

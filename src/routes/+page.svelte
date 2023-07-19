@@ -20,10 +20,8 @@
   /* Theming variables */
   .theme-dark {
     --color-primary: #0dc5ad;
-    --color-background-1: #fdfdfd;
-    --color-background-1-contrast: #333;
-    --color-background-2: #03473e;
-    --color-background-2-contrast: #fff;
+    --color-background: #03473e;
+    --color-background-contrast: #fff;
     --border-radius: 1rem;
     --font-family: 'Nanum Myeongjo', serif;
     --spacing-factor: 2;
@@ -32,10 +30,8 @@
   
   .theme-light {
     --color-primary: #ce0b54;
-    --color-background-1: none;
-    --color-background-1-contrast: #333;
-    --color-background-2: var(--color-background-1);
-    --color-background-2-contrast: var(--color-background-1-contrast);
+    --color-background: var(--color-background-1);
+    --color-background-contrast: var(--color-background-1-contrast);
     --border-radius: 0;
     --spacing-factor: 1;
     --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
