@@ -4,7 +4,7 @@
 
 <section class="root">
   <div class="content">
-    <h2>New items</h2>
+    <h2 class="title">New items</h2>
     <ul class="list">
       {#each products as product}
         <li key={product.id} class="item">
@@ -23,6 +23,10 @@
 
 <style scoped>
   .root {
+    --spacing-1: calc(1 * var(--spacing-factor) * 1rem);
+    --spacing-2: calc(1 * var(--spacing-factor) * 1.5rem);
+    --spacing-3: calc(1 * var(--spacing-factor) * 2rem);
+
     padding: var(--spacing-2) 0;
     background-color: var(--color-background);
     color: var(--color-body);
@@ -34,12 +38,17 @@
     max-width: 1200px;
   }
 
+  .title {
+    margin-top: 0;
+    margin-bottom: var(--spacing-2);
+  }
+
   .list {
     padding: 0;
     list-style: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: var(--spacing-2);
     width: 100%;
   }
 
@@ -60,8 +69,10 @@
     width: 100%;
     color: var(--color-body);
     background-color: var(--color-gray);
-    border-radius: var(--border-radius-default);
+    color: var(--color-gray-contrast);
+    border-radius: var(--border-radius);
     overflow: hidden;
+    box-shadow: var(--shadow);
   }
 
   .image-wrapper {

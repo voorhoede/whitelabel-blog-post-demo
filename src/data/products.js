@@ -11,6 +11,7 @@ export default [
       "category": "smartphones",
       "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
       "images": [
+        "/iphone-9.png",
         "https://i.dummyjson.com/data/products/1/4.jpg",
         "https://i.dummyjson.com/data/products/1/1.jpg",
         "https://i.dummyjson.com/data/products/1/2.jpg",
@@ -30,6 +31,7 @@ export default [
     "category": "smartphones",
     "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
     "images": [
+      "/iphone-x.png",
       "https://i.dummyjson.com/data/products/2/1.jpg",
       "https://i.dummyjson.com/data/products/2/2.jpg",
       "https://i.dummyjson.com/data/products/2/3.jpg",

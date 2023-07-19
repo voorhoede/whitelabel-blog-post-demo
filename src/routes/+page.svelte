@@ -3,6 +3,12 @@
 
 </script>
 
+<svelte:head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+</svelte:head>
+
 <div class="theme-dark">
   <ProductCards />
 </div>
@@ -13,31 +19,32 @@
 <style>
   /* Theming variables */
   .theme-dark {
-    --color-primary: #ce0b54;
-    --color-background: #333;
-    --color-body: #fff;
-    --color-gray: #555555;
-    --border-radius-default: 0.25rem;
-    --spacing-factor: 1;
-    --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --color-primary: #05a993;
+    --color-background: #fdfdfd;
+    --color-body: #333;
+    --color-gray: #f3f3f3;
+    --color-gray-contrast: #333;
+    --border-radius: 1rem;
+    --font-family: 'Nanum Myeongjo', serif;
+    --spacing-factor: 2;
+    --shadow: -4px 10px 20px 0px rgb(0, 0, 0, .1);
   }
   
   .theme-light {
     --color-primary: #ce0b54;
-    --color-background: #f5f5f5;
+    --color-background: none;
     --color-body: #333;
-    --color-gray: #e0e0e0;
-    --border-radius-default: 0.25rem;
-    --spacing-factor: 2;
+    --color-gray: none;
+    --color-gray-contrast: var(--color-body);
+    --border-radius: 0;
+    --spacing-factor: 1;
     --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --shadow: none;
   }
 
   /* Unthemed */
   :root {
     --spacing-factor: 1;
-    --spacing-1: calc(1 * var(--spacing-factor) * 1rem);
-    --spacing-2: calc(1 * var(--spacing-factor) * 1.5rem);
-    --spacing-3: calc(1 * var(--spacing-factor) * 2rem);
   }
 
   :global(body) {
