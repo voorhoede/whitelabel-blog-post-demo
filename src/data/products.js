@@ -40,16 +40,16 @@ export default [
   },
   {
     "id": 3,
-    "title": "Samsung Universe 9",
+    "title": "Samsung S20",
     "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
-    "price": 1249,
+    "price": 475,
     "discountPercentage": 15.46,
     "rating": 4.09,
     "stock": 36,
     "brand": "Samsung",
     "category": "smartphones",
     "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
-    "images": ["https://i.dummyjson.com/data/products/3/1.jpg"]
+    "images": ["/samsung-s20.png"]
   },
   {
     "id": 4,

@@ -19,27 +19,27 @@
 <style>
   /* Theming variables */
   .theme-dark {
-    --color-primary: #05a993;
-    --color-background: #fdfdfd;
-    --color-body: #333;
-    --color-gray: #f3f3f3;
-    --color-gray-contrast: #333;
+    --color-primary: #0dc5ad;
+    --color-background-1: #fdfdfd;
+    --color-background-1-contrast: #333;
+    --color-background-2: #03473e;
+    --color-background-2-contrast: #fff;
     --border-radius: 1rem;
     --font-family: 'Nanum Myeongjo', serif;
     --spacing-factor: 2;
-    --shadow: -4px 10px 20px 0px rgb(0, 0, 0, .1);
+    --shadow-default: -4px 10px 20px 0px #01393185;
   }
   
   .theme-light {
     --color-primary: #ce0b54;
-    --color-background: none;
-    --color-body: #333;
-    --color-gray: none;
-    --color-gray-contrast: var(--color-body);
+    --color-background-1: none;
+    --color-background-1-contrast: #333;
+    --color-background-2: var(--color-background-1);
+    --color-background-2-contrast: var(--color-background-1-contrast);
     --border-radius: 0;
     --spacing-factor: 1;
     --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --shadow: none;
+    --shadow-default: none;
   }
 
   /* Unthemed */

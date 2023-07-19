@@ -28,8 +28,8 @@
     --spacing-3: calc(1 * var(--spacing-factor) * 2rem);
 
     padding: var(--spacing-2) 0;
-    background-color: var(--color-background);
-    color: var(--color-body);
+    background-color: var(--color-background-1);
+    color: var(--color-background-1-contrast);
     font-family: var(--font-family);
   }
   
@@ -68,11 +68,11 @@
     display: block;
     width: 100%;
     color: var(--color-body);
-    background-color: var(--color-gray);
-    color: var(--color-gray-contrast);
+    background-color: var(--color-background-2);
+    color: var(--color-background-2-contrast);
     border-radius: var(--border-radius);
     overflow: hidden;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-default);
   }
 
   .image-wrapper {
@@ -80,7 +80,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: white;
   }
 
   .image {
