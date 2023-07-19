@@ -1,0 +1,9 @@
+:root {
+  --color-primary: #ce0b54;
+  --color-background: var(--color-background-1);
+  --color-background-contrast: var(--color-background-1-contrast);
+  --border-radius: 0;
+  --spacing-factor: 1;
+  --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --shadow-default: none;
+}

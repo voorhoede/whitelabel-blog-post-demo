@@ -1,0 +1,10 @@
+:root {
+  --color-body: #333;
+  --color-primary: #0dc5ad;
+  --color-background: #03473e;
+  --color-background-contrast: #fff;
+  --border-radius: 1rem;
+  --font-family: 'Nanum Myeongjo', serif;
+  --spacing-factor: 2;
+  --shadow-default: -4px 10px 20px 0px #01393185;
+}

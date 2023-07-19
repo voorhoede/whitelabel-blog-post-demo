@@ -22,6 +22,20 @@
 </section>
 
 <style scoped>
+  /* Unthemed */
+  :root {
+    --spacing-factor: 1;
+  }
+
+  :global(body) {
+    margin: 0;
+    padding: 0;
+  }
+
+  :global(h3, p) {
+    margin: 0;
+  }
+
   .root {
     --spacing-1: calc(1 * var(--spacing-factor) * 1rem);
     --spacing-2: calc(1 * var(--spacing-factor) * 1.5rem);

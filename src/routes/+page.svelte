@@ -1,6 +1,8 @@
 <script>
   import ProductCards from "../components/product-cards.svelte";
+  import { PUBLIC_THEME } from '$env/static/public';
 
+  import(`../themes/${PUBLIC_THEME}.css?inline`);
 </script>
 
 <svelte:head>
@@ -9,46 +11,4 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
 </svelte:head>
 
-<div class="theme-dark">
-  <ProductCards />
-</div>
-<div class="theme-light">
-  <ProductCards />
-</div>
-
-<style>
-  /* Theming variables */
-  .theme-dark {
-    --color-primary: #0dc5ad;
-    --color-background: #03473e;
-    --color-background-contrast: #fff;
-    --border-radius: 1rem;
-    --font-family: 'Nanum Myeongjo', serif;
-    --spacing-factor: 2;
-    --shadow-default: -4px 10px 20px 0px #01393185;
-  }
-  
-  .theme-light {
-    --color-primary: #ce0b54;
-    --color-background: var(--color-background-1);
-    --color-background-contrast: var(--color-background-1-contrast);
-    --border-radius: 0;
-    --spacing-factor: 1;
-    --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --shadow-default: none;
-  }
-
-  /* Unthemed */
-  :root {
-    --spacing-factor: 1;
-  }
-
-  :global(body) {
-    margin: 0;
-    padding: 0;
-  }
-
-  :global(h3, p) {
-    margin: 0;
-  }
-</style>
+<ProductCards />
